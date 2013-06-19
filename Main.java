@@ -1,4 +1,4 @@
-// kleiner Kommentar
+// kleiner kleiner Kommentar
 public class Main {
 
 	public static void main(String[] args) {
