@@ -1,6 +1,4 @@
 public class Main {
-	
-	//Neuer Name
 
 	public static void main(String[] args) {
 
