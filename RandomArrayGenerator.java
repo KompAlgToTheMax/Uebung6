@@ -1,5 +1,6 @@
 import java.util.Random;
 
+
 public class RandomArrayGenerator {
 
 	public int[] getRandomArray(int digits, int highestValue) {
