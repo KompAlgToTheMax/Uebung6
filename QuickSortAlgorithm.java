@@ -12,37 +12,36 @@ public class QuickSortAlgorithm {
 	}
 
 	public int[] sort(int left, int right) {
-		int q;
 		compareCounter++;
 		if (left < right) {
-			q = partition(left, right);
-			sort(left, q);
-			sort(q + 1, right);
+			int indexPivot = partition(left, right);
+			sort(left, indexPivot);
+			sort(indexPivot + 1, right);
 		}
 		return intArr;
 	}
 
 	int partition(int left, int right) {
-		int i, j, x = intArr[(left + right) / 2];
 		
-		i = left - 1;
-		j = right + 1;
+		int low = left - 1;
+		int high = right + 1;
+		int pivot = intArr[(left + right) / 2];
 
 		do {
-			i++;
-		} while (intArr[i] < x);
+			low++;
+		} while (intArr[low] < pivot);
 
 		do {
-			j--;
-		} while (intArr[j] > x);
+			high--;
+		} while (intArr[high] > pivot);
 
 		compareCounter++;
-		if (i < j) {
-			int k = intArr[i];
-			intArr[i] = intArr[j];
-			intArr[j] = k;
+		if (low < high) {
+			int k = intArr[low];
+			intArr[low] = intArr[high];
+			intArr[high] = k;
 		} else {
-			return j;
+			return high;
 		}
 		return -1;
 	}

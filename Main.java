@@ -3,9 +3,9 @@ public class Main {
 	public static void main(String[] args) {
 
 		RandomArrayGenerator rag = new RandomArrayGenerator();
-		int[] intArr = rag.getRandomArray(111,10000);
+//		int[] intArr = rag.getRandomArray(111,10000);
 		
-//		int[] intArr = {16, 37, 31, 10, 27, 4, 20, 25};	
+		int[] intArr = {1,2,3,4,1};	
 //		for(int k = 0; k<intArr.length;k++) {
 //			System.out.println(intArr[k]);
 //		}
