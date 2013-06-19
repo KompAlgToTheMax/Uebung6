@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 //bla
 
+=======
+// kleiner kleiner Kommentar
+>>>>>>> 2b8cadbc4d39c85a54cb8b2a419c81976538de3b
 public class Main {
 
 	public static void main(String[] args) {
